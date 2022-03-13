@@ -1,0 +1,82 @@
+[build-system]
+requires = [
+    "poetry>=1.0.0",
+]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "{{ cookiecutter.project_name }}"
+version = "{{ cookiecutter.version }}"
+description = "{{ cookiecutter.project_short_description }}"
+readme = "README.rst"
+license = "{{ cookiecutter.open_source_license }}"
+authors = [
+    "{{ cookiecutter.full_name }} <{{ cookiecutter.email }}>",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+]
+keywords = [
+    {% for keyword in cookiecutter.keywords.split(',') %}"{{ keyword.strip() }}",
+    {% endfor %}
+]
+repository = "{{ cookiecutter.github_repository }}"
+homepage = "{{ cookiecutter.github_repository }}"
+include = [
+    ".coveragerc",
+    "noxfile.py",
+    "poetry.lock",
+    "*.rst",
+    "*.txt",
+    "*.toml",
+    "docs/*",
+    "scripts/*",
+    "examples/*",
+]
+
+[tool.poetry.scripts]
+prysk = "{{ cookiecutter.project_slug }}:cli.main"
+
+[tool.poetry.dependencies]
+python = {{ "^3.7" if cookiecutter.python_37 else "^3.8" }}
+tomli = "^2.0.1"
+tomli-w = "^1.0.0"
+
+[tool.poetry.dev-dependencies]
+black = "^22.1.0"
+pytest = "^7.0.1"
+prysk = "^0.11.0"
+coverage = "^6.3.1"
+isort = "^5.10.1"
+pylint = "^2.12.2"
+Sphinx = "^4.4.0"
+furo = "^2022.1.2"
+nox = "^2022.1.7"
+mypy = "^0.931"
+
+[tool.coverage.run]
+source = [
+    "src/{{ cookiecutter.project_slug }}",
+]
+
+[tool.pylint.master]
+fail-under = 7
+
+[tool.pylint.format]
+max-line-length = 88
+max-module-lines = 800
+
+[tool.pylint.message_control]
+disable = "C0330, C0326"
+
+[tool.black]
+line-length = 88
+verbose = true
+include = "\\.pyi?$"
+
+[too.isort]
+profile = "black"

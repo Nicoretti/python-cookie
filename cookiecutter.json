@@ -1,0 +1,24 @@
+{
+    "full_name": "Nicola Coretti",
+    "email": "nico.coretti@gmail.com",
+    "github_username": "nicoretti",
+    "pypi_username": "{{ cookiecutter.github_username }}",
+
+    "project_name": "Python Project Template",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+    "project_short_description": "Python Boilerplate contains all the boilerplate you need to create a Python package.",
+    "version": "0.1.0",
+    "open_source_license": ["MIT", "BSD", "ISCL", "Apache Software License 2.0", "Not open source"],
+    "github_repository": "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}",
+    "keywords": "python, cli",
+
+    "gh_pages": true,
+    "dependabot": true,
+
+    "linux-ci": true,
+    "macos-ci": true,
+    "windows-ci": true,
+
+    "python_37": true
+}
+
