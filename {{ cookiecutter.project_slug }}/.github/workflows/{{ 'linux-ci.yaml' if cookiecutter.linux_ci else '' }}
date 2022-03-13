@@ -1,0 +1,47 @@
+name: Verfier
+
+on: [ pull_request ]
+
+jobs:
+  build:
+    {% raw -%}
+    name: "Python ${{ matrix.python-version }} on ${{ matrix.os }}"
+    runs-on: "${{ matrix.os }}"
+    {%- endraw %}
+    strategy:
+      matrix:
+        os:
+          - ubuntu-latest
+        python-version:
+        {% for version in ["3.7", "3.8", "3.9", "3.10"] -%}
+          {% if version >= cookiecutter.python_base_version -%}
+          - {{ version }}
+          {% endif -%}
+        {% endfor %}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.4.0
+
+      - name: Install Poetry
+        uses: snok/install-poetry@v1
+
+      {% raw %}
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v3
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install Dependencies
+        run: |
+          sudo apt-get install -y bash
+          sudo apt-get install -u zsh
+          poetry install
+      - name: Verifier
+        run: |
+          poetry run python -m nox
+      - name: Coveralls
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path-to-lcov: coverage.lcov
+      {% endraw %}
