@@ -113,7 +113,7 @@ def typecheck(session):
 @nox.session(python=False)
 def coverage(session):
     """Collect code coverage."""
-    session.error("Not Implemented Yet!")
+    session.warn("No Coverage Provided | Details: Not Implemented Yet!")
 
 
 @nox.session(python=False)

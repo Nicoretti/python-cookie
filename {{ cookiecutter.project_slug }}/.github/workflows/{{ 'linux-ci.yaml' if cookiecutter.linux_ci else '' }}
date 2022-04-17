@@ -13,10 +13,9 @@ jobs:
         os:
           - ubuntu-latest
         python-version:
-        {%- for version in ["3.7", "3.8", "3.9", "3.10"] -%}
-          {%- if version >= cookiecutter.python_base_version %}
-          - {{ version }}
-          {%- endif %}
+        {%- set major, minor = cookiecutter.python_base_version.split('.') | map('int') -%}
+        {%- for version in range(minor, 11) %}
+          - 3.{{ version }}
         {%- endfor %}
 
     steps:
@@ -34,9 +33,6 @@ jobs:
       - name: Install Dependencies
         run: poetry install
 
-      - name: Run Tests
-        run: poetry run python -m nox -s test
-
-      - name: Run linters
-        run: poetry run python -m nox -s check
+      - name: Run workspace/project verification
+        run: poetry run python -m nox -s verify
       {% endraw %}
