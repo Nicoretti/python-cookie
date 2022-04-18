@@ -1,17 +1,17 @@
 {{ cookiecutter.project_name }}
 =================================
 
-{% if cookiecutter.linux_ci -%}
+{% if cookiecutter.linux_ci | lower == "true" -%}
 .. image:: https://github.com/Nicoretti/{{ cookiecutter.project_slug }}/actions/workflows/linux-ci.yaml/badge.svg
     :target: https://github.com/Nicoretti/{{ cookiecutter.project_slug }}/actions/workflows/verifier.yaml
 {%- endif %}
 
-{% if cookiecutter.macos_ci -%}
+{% if cookiecutter.macos_ci | lower == "true" -%}
 .. image:: https://github.com/Nicoretti/{{ cookiecutter.project_slug }}/actions/workflows/macos-ci.yaml/badge.svg
     :target: https://github.com/Nicoretti/{{ cookiecutter.project_slug }}/actions/workflows/macos-ci.yaml
 {%- endif %}
 
-{% if cookiecutter.windows_ci -%}
+{% if cookiecutter.windows_ci | lower == "true" -%}
 .. image:: https://github.com/Nicoretti/{{ cookiecutter.project_slug }}/actions/workflows/windows-ci.yaml/badge.svg
     :target: https://github.com/Nicoretti/{{ cookiecutter.project_slug }}/actions/workflows/windows-ci.yaml
 {%- endif %}

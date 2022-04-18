@@ -12,12 +12,12 @@
     "github_repository": "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}",
     "keywords": "python, ",
 
-    "gh_pages": true,
-    "dependabot": true,
+    "gh_pages": ["Yes", "No"],
+    "dependabot": ["Yes", "No"],
 
-    "linux_ci": true,
-    "macos_ci": true,
-    "windows_ci": true,
+    "linux_ci": ["Yes", "No"],
+    "macos_ci": ["Yes", "No"],
+    "windows_ci": ["Yes", "No"],
 
     "python_base_version": ["3.7", "3.8", "3.9", "3.10"]
 }

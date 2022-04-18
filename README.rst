@@ -1,6 +1,9 @@
 Nicoretti's Python Cookie
 =========================
 
+How to use this cookie
+Asep
+
 What's in the box
 -----------------
 
