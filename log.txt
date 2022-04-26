@@ -1,0 +1,137 @@
+commit d8706b8e7dceba2b5263b9c7d674cd27afa674d8
+Author: Nicola Coretti <nico.coretti@gmail.com>
+Date:   Tue Apr 26 21:13:59 2022 +0200
+
+    Add nox-poetry dev dependency and sort dev depencencies
+
+commit 4e78da4f2255d19a1225c853e20e24d9d7522ef1
+Author: Nicola Coretti <nico.coretti@gmail.com>
+Date:   Mon Apr 25 22:36:53 2022 +0200
+
+    Add pyupgrade to cookie and project
+
+commit 4a62fd88c67ac6da27ebbfb50ba6151f4aa3f56d
+Author: Nicola Coretti <nico.coretti@gmail.com>
+Date:   Mon Apr 18 22:34:57 2022 +0200
+
+    Fix optional file creation(s)
+
+commit 80fbbfe42d591cecbcc3e44b9082351c40bfb677
+Author: Nicola Coretti <nico.coretti@gmail.com>
+Date:   Sun Apr 17 09:26:16 2022 +0200
+
+    Fix github action setup
+
+commit 13a0479d56d88e64f5156523e26d505adf49e127
+Author: Nicola Coretti <nico.coretti@gmail.com>
+Date:   Sat Apr 16 20:31:43 2022 +0200
+
+    Update README.rst template of cookie
+
+commit e4b85c577dfa280128c68e84d274aef1278dd317
+Author: Nicola Coretti <nico.coretti@gmail.com>
+Date:   Sat Apr 16 19:40:55 2022 +0200
+
+    Add basic noxfile to cookie
+
+commit f4f7951eace5b3c88505f76cad1876680fcad2ef
+Author: Nicola Coretti <nico.coretti@gmail.com>
+Date:   Sun Mar 20 17:26:09 2022 +0100
+
+    Add README.rst to cookie
+
+commit 7638e74eb8ac007bced9f5d5758d7eb249803498
+Author: Nicola Coretti <nico.coretti@gmail.com>
+Date:   Sun Mar 20 17:14:50 2022 +0100
+
+    Add basic test folder to cookie project
+
+commit cd50cdfc83716f1e9d3ea9d68db8699a557b8880
+Author: Nicola Coretti <nico.coretti@gmail.com>
+Date:   Sun Mar 20 17:12:25 2022 +0100
+
+    Add basic package setup for cookie project
+
+commit 6ce461d724b983188dfff41a1f342b2456a5042e
+Author: Nicola Coretti <nico.coretti@gmail.com>
+Date:   Sun Mar 20 17:11:37 2022 +0100
+
+    Add basic README file with badges to cookie project
+
+commit 93ccfd4d855f9fad0d82a68d859e2df0be9c4d95
+Author: Nicola Coretti <nico.coretti@gmail.com>
+Date:   Sun Mar 20 17:11:05 2022 +0100
+
+    Add .gitignore file to cookie project
+
+commit 28a1a1a36d45e3f051b23a9343806dec3454a636
+Author: Nicola Coretti <nico.coretti@gmail.com>
+Date:   Sun Mar 20 17:10:25 2022 +0100
+
+    Add test folder to cookie
+
+commit e1d6f2004849cd1d204b0845f231c3ebcfa31123
+Author: Nicola Coretti <nico.coretti@gmail.com>
+Date:   Sun Mar 20 17:01:52 2022 +0100
+
+    Update cookie configuration file
+
+commit 1a347ee94ae03ee9da385b081449ba3c6abc7614
+Author: Nicola Coretti <nico.coretti@gmail.com>
+Date:   Sun Mar 20 16:59:52 2022 +0100
+
+    Add .github folder and workflows to cookie project
+
+commit 48f0b5b4419710b56b0ddedd1cc1d778798309e6
+Author: Nicola Coretti <nico.coretti@gmail.com>
+Date:   Sun Mar 20 16:59:25 2022 +0100
+
+    Add scripts folder to cookie project
+
+commit 167ad5a1ba5f30f3db1641bb5cfa09da21df64be
+Author: Nicola Coretti <nico.coretti@gmail.com>
+Date:   Sun Mar 20 16:59:00 2022 +0100
+
+    Add examples folder to cookie project
+
+commit d4ae2d4a5472740f90fe67ad82323b1ff3885d48
+Author: Nicola Coretti <nico.coretti@gmail.com>
+Date:   Sun Mar 20 16:58:22 2022 +0100
+
+    Add docs folder to cookie project
+
+commit 821230b13ee19a4a26e62ac83e4544bbd0d0d8f6
+Author: Nicola Coretti <nico.coretti@gmail.com>
+Date:   Sun Mar 20 16:52:44 2022 +0100
+
+    Add poetry.lock file for cookie
+
+commit 73c7fc11f87c93d25262065a685c4db3974c7440
+Author: Nicola Coretti <nico.coretti@gmail.com>
+Date:   Sun Mar 20 16:51:35 2022 +0100
+
+    Add licenses folder to cookie
+
+commit 4cdbce81ff38e059ba3f58943eff18a7b93eaa06
+Author: Nicola Coretti <nico.coretti@gmail.com>
+Date:   Sun Mar 20 16:50:22 2022 +0100
+
+    Add pyproject.toml to cookie project
+
+commit ba9a2f17a84bafa63f611b744c86df4d6c82b6ef
+Author: Nicola Coretti <nico.coretti@gmail.com>
+Date:   Sun Mar 20 16:49:35 2022 +0100
+
+    Add .gitignore file
+
+commit 47050031696451cd08790ec401c6f56796515be3
+Author: Nicola Coretti <nico.coretti@gmail.com>
+Date:   Sun Mar 13 21:09:25 2022 +0100
+
+    Add basic cookie structure and files
+
+commit 90505507f0dbaa55994a566d3aba5f27c5531e96
+Author: Nicola Coretti <nico.coretti@gmail.com>
+Date:   Sat Feb 19 10:56:58 2022 +0100
+
+    Initial commit
