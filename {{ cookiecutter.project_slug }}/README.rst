@@ -25,7 +25,7 @@
 .. image:: https://img.shields.io/badge/docs-available-blue.svg
     :target: https://nicoretti.github.io/{{ cookiecutter.project_slug }}/
 
-.. image:: https://img.shields.io/badge/pypi%20package-unavailable-red.svg
+.. image:: https://img.shields.io/pypi/v/{{ cookiecutter.project_slug }}
      :target: https://pypi.org/project/{{ cookiecutter.project_slug }}/
      :alt: PyPI Version
 
