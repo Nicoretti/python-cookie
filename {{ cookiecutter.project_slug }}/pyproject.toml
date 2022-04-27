@@ -39,7 +39,7 @@ include = [
 ]
 
 [tool.poetry.scripts]
-prysk = "{{ cookiecutter.project_slug }}:cli.main"
+{{ cookiecutter.project_slug }} = "{{ cookiecutter.project_slug }}:cli.main"
 
 [tool.poetry.dependencies]
 python = "^{{ cookiecutter.python_base_version }}"
