@@ -88,3 +88,12 @@ force_grid_wrap = 2
 pythonpath = [
     "src"
 ]
+
+[mypy]
+mypy_path = "$MYPY_CONFIG_FILE_DIR/src"
+
+[tool.mypy]
+files = [
+    'noxfile.py',
+    'src/**/*.py',
+]
